@@ -32,18 +32,23 @@ public class NumberRangeMain implements NumberRangeSummarizer {
 
         List<Integer> inputList = new ArrayList<>(input); 
 
-        for (int i = 0; i < input.size() - 1; i++ ){
+        for (int i = 0; i < input.size(); i++ ){
 
             if (i != 0){
                 finalStr += ", ";
             }
 
-            if (inputList.get(i) + 1 == inputList.get(i+1)){
+            
+            if ((i+1) == input.size()){
+                finalStr += String.valueOf(inputList.get(i));
+            }
+            
+            else if (inputList.get(i) + 1 == inputList.get(i+1)){
                 for (int j = i + 2; j < input.size(); j++){
 
                     if (inputList.get(j-1) + 1 != inputList.get(j)){
                         finalStr += String.valueOf(inputList.get(i)) +"-"+ String.valueOf(inputList.get(j-1));
-                        i = j;
+                        i = j - 1;
                         break;
                     }
 
