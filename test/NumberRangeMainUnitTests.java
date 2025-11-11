@@ -50,7 +50,7 @@ public class NumberRangeMainUnitTests {
             count++;
         }
 
-        System.out.println((100*passed/count) + "% test cases passed.");
+        System.out.println((100.0*passed/count) + "% test cases passed.");
     }
 
     public static void runSummarizeCollection(NumberRangeMain myObj){
@@ -63,7 +63,9 @@ public class NumberRangeMainUnitTests {
             new ArrayList<Integer>(Arrays.asList(2,3,4,7,9,12,18,20,29)),
             new ArrayList<Integer>(Arrays.asList(10,20,30,40,50,60,70,80,90,95,100)),
             new ArrayList<Integer>(Arrays.asList(2001)),
-            new ArrayList<Integer>(Arrays.asList(1,3,4,5,7,8,9))
+            new ArrayList<Integer>(Arrays.asList(1,3,4,5,7,8,9)),
+            new ArrayList<Integer>(Arrays.asList(2,3)),
+            new ArrayList<Integer>(Arrays.asList(2,3,5,6))
             )
         );
 
@@ -72,7 +74,9 @@ public class NumberRangeMainUnitTests {
             "2-4, 7, 9, 12, 18, 20, 29",
             "10, 20, 30, 40, 50, 60, 70, 80, 90, 95, 100",
             "2001",
-            "1, 3-5, 7-9"
+            "1, 3-5, 7-9",
+            "2-3",
+            "2-3, 5-6"
             )
         );
 
@@ -87,7 +91,7 @@ public class NumberRangeMainUnitTests {
             count++;
         }
 
-        System.out.println((100*passed/count) + "% test cases passed.");
+        System.out.println((100.0*passed/count) + "% test cases passed.");
 
     }
     
