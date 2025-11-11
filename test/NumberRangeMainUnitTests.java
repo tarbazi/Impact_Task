@@ -28,7 +28,7 @@ public class NumberRangeMainUnitTests {
             "2001",
             "9,8,7,5,4,3,1"
             )
-        );
+        );  // assumption is that there are no whitespaces between comma seperated input values
 
         List<List<Integer>> outputs = new ArrayList<List<Integer>>(Arrays.asList(
             new ArrayList<Integer>(Arrays.asList(1,3,6,7,8,12,13,14,15,21,22,23,24,31)),
